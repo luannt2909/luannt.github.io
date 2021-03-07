@@ -1,7 +1,3 @@
-layout: page
-title: "PAGE TITLE"
-permalink: /URL-PATH/
-
 # Tôi đã phỏng vấn Backend Golang như thế nào:
 Khi tôi làm việc ở *VNG* được 3 năm (trong đó có 2 năm kinh nghiệm golang) tôi nhận ra đang có sự thay đổi không khả quan 
 từ phòng ban cũng như team tôi, và tôi nghĩ đây là thời gian tôi cần bến đỗ, chân trời mới cho mình.
