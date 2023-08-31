@@ -1,4 +1,8 @@
-## Welcome to Luan blog
+layout: page
+title: "My Blogs"
+permalink: /blogs
+
+## Welcome to Luan blogs
 
 This is a place that i share my knowledge's. And thank you to visit here.
 
