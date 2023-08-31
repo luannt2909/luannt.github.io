@@ -1,7 +1,7 @@
 layout: post
-title: "POST TITLE"
-date: YYYY-MM-DD hh:mm:ss -0000
-categories: CATEGORY-1 CATEGORY-2
+title: "Interview Story"
+date: 2023-08-31 13:40:00 -0000
+categories: INTERVIEW-STORY
 
 # Tôi đã phỏng vấn Backend Golang như thế nào:
 Khi tôi làm việc ở *VNG* được 3 năm (trong đó có 2 năm kinh nghiệm golang) tôi nhận ra đang có sự thay đổi không khả quan 
