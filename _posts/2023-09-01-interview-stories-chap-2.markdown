@@ -1,12 +1,18 @@
+---
+layout: post
+title: "Interview Stories chap 2"
+date: 2023-08-31 16:00:00 +0700
+categories: INTERVIEW-STORIES
+---
 
 # Tôi đã phỏng vấn Backend Golang như thế nào:
 Phần trước tôi đã giới thiệu về hành trình của tôi ờ VNG cũng như quá trình phỏng vấn ở 2 công ty là Amanotes và Rakuna.
 Nhưng vẫn chưa kết thúc ở đó, ngoài 2 công ty ấy ra tôi còn phỏng vấn ở 2 công ty khác nữa, tôi xin tiếp tục như sau:
 
 ## 3. Công ty VinID và người quen cũ ở VNG:
-Ở VinID tôi có một số đồng nghiệp cũ từ thời làm ở ZaloPay - VNG, tôi có nhờ các anh refer vào VinID để tìm kiếm cơ hội mới 
+Ở VinID tôi có một số đồng nghiệp cũ từ thời làm ở ZaloPay - VNG, tôi có nhờ các anh refer vào VinID để tìm kiếm cơ hội mới
 cho mình.
-May mắn thay sau 2 ngày thì tôi cũng được mời phỏng vấn tại văn phòng của VinID ở HCM 
+May mắn thay sau 2 ngày thì tôi cũng được mời phỏng vấn tại văn phòng của VinID ở HCM
 (lúc này đã đổi tên thành One Mount Group).
 
 Bước vào văn phòng hơi sớm hơn thời gian một tí, chị HR đã đón tôi với nụ cười tươi rói, sau một hồi nói chuyện thì tôi
@@ -19,7 +25,7 @@ Buổi phỏng vấn bắt đầu, anh Sơn đi vào thẳng vấn đề luôn.
 - A Sơn: "Em ở ZaloPay hiện tại đã và đang làm được những gì, show hết hàng ra anh xem nào".
 - Tôi: "Dạ, thế để em cho anh xem một tác phẩm nghệ thuật của em."
 
-Tay cầm bút vẽ lên bảng sơ đồ hệ thống mà tôi đang làm, đó là thiết kế hệ thống phục vụ tính năng gửi các reminder cho user 
+Tay cầm bút vẽ lên bảng sơ đồ hệ thống mà tôi đang làm, đó là thiết kế hệ thống phục vụ tính năng gửi các reminder cho user
 ZaloPay như thực hiện KYC, thanh toán điện nước, liên kết ngân hàng, ...
 
 ---
@@ -42,7 +48,7 @@ cụ thể:
 
 > **NOTE**
 Ở đây, vì là server to server(S2S) nên chúng tôi authentication bằng cách
-tạo signature dựa vào các params và secret key, vd: `hash256(user_id | timestamp | secret_key)`. Phía client mỗi request 
+tạo signature dựa vào các params và secret key, vd: `hash256(user_id | timestamp | secret_key)`. Phía client mỗi request
 lúc nào cũng phải gửi lên clientID + signature, đầu server cũng sẽ làm tương tự như client, sau đó sẽ so sánh 2 signatures
 xem có giống nhau không?
 
@@ -53,7 +59,7 @@ Lại một lần nữa tôi cũng qua ải này khá ổn.
 Đến ai thứ 3 là về database tôi lưu trữ, cụ thể với hệ thống reminder như thế thì sẽ phải lưu trữ rất nhiều reminder cho từng
 user, thì tôi đang thiết kế và lưu trữ như thế nào?
 
-Hệ thống của tôi đang dùng là mySQL, và cách partition của tôi đang là lưu theo tháng, đảm bảo tại mỗi tháng đó luôn chỉ 
+Hệ thống của tôi đang dùng là mySQL, và cách partition của tôi đang là lưu theo tháng, đảm bảo tại mỗi tháng đó luôn chỉ
 chứa các reminder còn hạn mà thôi.
 > Cách này khá ổn, nhưng lại hơi dở một cái là tôi phải có một cron job đi migrate data từ tháng cũ sang tháng mới.
 
@@ -67,7 +73,7 @@ Sau cùng, A Sơn có hỏi tôi thêm một số câu hỏi như:
 + Tại sao dùng RESTAPI mà không dùng gRPC để giao tiếp giữa các internal services?
 + Tại sao dùng K8S lại gặp khó khăn trong việc triển khai gRPC?
 
-Túm váy lại thì tôi cũng trả lời đâu đó được 70-80% các ông ạ, sau đó thì đến lượt tôi hỏi về các benefit, business, career path 
+Túm váy lại thì tôi cũng trả lời đâu đó được 70-80% các ông ạ, sau đó thì đến lượt tôi hỏi về các benefit, business, career path
 của tôi ở đây, rồi nhanh chóng kết thúc interview, vì lúc đó cũng hơn 18h chiều rồi (phỏng vấn lúc 16h30)
 
 ## 4.Công ty Sendo và ... là công ty của tôi hiện giờ :v
@@ -75,7 +81,7 @@ của tôi ở đây, rồi nhanh chóng kết thúc interview, vì lúc đó c�
 Không giống như các công ty ở trên phải phỏng vấn từ 1h-2h, tôi phỏng vấn ở Sendo khá nhanh (đâu đó 20-30p), và nhanh chóng
 nhận được offer của công ty luôn.
 
-Nói về Sendo thì lại là công ty mà tôi không đánh giá cao lắm so với các công ty trước, vì nói về khoản phúc lợi, môi trường 
+Nói về Sendo thì lại là công ty mà tôi không đánh giá cao lắm so với các công ty trước, vì nói về khoản phúc lợi, môi trường
 làm việc thì tôi không ưng lắm, nhưng bù lại, còn người bên đây rất nice, nên thành ra lại là bến đỗ tiếp theo của tôi.
 
 Quay lại buổi phỏng vấn với Sendo, tôi được hẹn phỏng vấn lúc 17h chiều, sau ngày phỏng vấn bên VinID ấy :v
@@ -109,4 +115,3 @@ mất cái kia.
 
 Sau cùng thì tôi cũng không hối hận với lựa chọn này của tôi, vì đến bây giờ, tôi đã học hỏi cũng như trưởng thành
 hơn rất nhiều đấy ^_^
-
