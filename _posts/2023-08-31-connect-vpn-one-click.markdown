@@ -4,10 +4,8 @@ title: "How to connect VPN using Tunnelblick with one click for MacOS"
 date: 2023-08-31 16:05:00 +0700
 categories: TIPS
 ---
-
 Hi guys, long time no see...  
 In this article, i will show you a trick to `connect to VPN using Tunnelblick application with just one click`. Let's get started.  
-
 
 > First of all, make sure you have installed Tunnelblick application and configured your VPN using .ovpn file. 
 
@@ -87,7 +85,7 @@ Some of the above information is described as follows:
 **key**: secret key that is decoded from QR code  
 **Sendo**: VPN name that we configured, example:  
 
-![connect vpn image](../docs/assests/tip_connect_vpn.png)
+![connect vpn image](../assets/tip_connect_vpn.png)
 
 Let's execute the shell script file.
 ```shell

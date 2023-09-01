@@ -21,16 +21,29 @@
 title: Hi, I'm Luan
 email: luannt2909@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi, I'm Luan, welcome to my world. updating...
+  Hi, I'm Luan, welcome to my world.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: luannt
+#twitter_username: luannt
 github_username:  luannt2909
 
 # Build settings
 theme: minima
-plugins:
-  - jekyll-feed
+minima:
+  date_format: "%Y-%m-%d"
+#remote_theme: jekyll/minima@3cdd14d
+#plugins:
+#  - jekyll-feed
+#  - jekyll-remote-theme
+show_excerpts: true
+header_pages:
+  - _pages/frontpage.markdown
+  - _pages/about.markdown
+  - _pages/archive.markdown
+
+include:
+  - _pages
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
