@@ -85,7 +85,7 @@ Some of the above information is described as follows:
 **key**: secret key that is decoded from QR code  
 **Sendo**: VPN name that we configured, example:  
 
-![connect vpn image](../assets/tip_connect_vpn.png)
+![connect vpn image](../assets/images/tip_connect_vpn.png)
 
 Let's execute the shell script file.
 ```shell
