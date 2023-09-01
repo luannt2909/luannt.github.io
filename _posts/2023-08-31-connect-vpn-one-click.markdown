@@ -7,7 +7,9 @@ categories: TIPS
 Hi guys, long time no see...  
 In this article, i will show you a trick to `connect to VPN using Tunnelblick application with just one click`. Let's get started.  
 
-> First of all, make sure you have installed Tunnelblick application and configured your VPN using .ovpn file. 
+> First of all, make sure you have installed Tunnelblick application and configured your VPN using .ovpn file.
+
+![]({{ site.base_url }}{% link /assets/images/tip_vpn.gif %})
 
 ## Step 1: Install oauthtool.
 Let's install oauthtool using Homebrew or some other way.
@@ -85,7 +87,8 @@ Some of the above information is described as follows:
 **key**: secret key that is decoded from QR code  
 **Sendo**: VPN name that we configured, example:  
 
-![connect vpn image](../assets/images/tip_connect_vpn.png)
+![]({{ site.base_url }}{% link /assets/images/tip_connect_vpn.png %})
+
 
 Let's execute the shell script file.
 ```shell
